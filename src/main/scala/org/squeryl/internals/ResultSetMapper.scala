@@ -134,6 +134,11 @@ class ColumnToTupleMapper(val outMappers: Array[OutMapper[_]]) {
       case 5 => (m(0).map(rs), m(1).map(rs), m(2).map(rs), m(3).map(rs), m(4).map(rs))
       case 6 => (m(0).map(rs), m(1).map(rs), m(2).map(rs), m(3).map(rs), m(4).map(rs), m(5).map(rs))
       case 7 => (m(0).map(rs), m(1).map(rs), m(2).map(rs), m(3).map(rs), m(4).map(rs), m(5).map(rs), m(6).map(rs))
+      case 8 => (m(0).map(rs), m(1).map(rs), m(2).map(rs), m(3).map(rs), m(4).map(rs), m(5).map(rs), m(6).map(rs), m(7).map(rs))
+      case 9 => (m(0).map(rs), m(1).map(rs), m(2).map(rs), m(3).map(rs), m(4).map(rs), m(5).map(rs), m(6).map(rs), m(7).map(rs), m(8).map(rs))
+      case 10 => (m(0).map(rs), m(1).map(rs), m(2).map(rs), m(3).map(rs), m(4).map(rs), m(5).map(rs), m(6).map(rs), m(7).map(rs), m(8).map(rs), m(9).map(rs))
+      case 11 => (m(0).map(rs), m(1).map(rs), m(2).map(rs), m(3).map(rs), m(4).map(rs), m(5).map(rs), m(6).map(rs), m(7).map(rs), m(8).map(rs), m(9).map(rs), m(10).map(rs))
+      case 12 => (m(0).map(rs), m(1).map(rs), m(2).map(rs), m(3).map(rs), m(4).map(rs), m(5).map(rs), m(6).map(rs), m(7).map(rs), m(8).map(rs), m(9).map(rs), m(10).map(rs), m(11).map(rs))
       //TODO: implement tuples results of size up to 22
       case z:Any => error("tuples of size "+size+" and greater are not supported")
     }
